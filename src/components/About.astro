@@ -1,24 +1,41 @@
 ---
+import { Image } from '@astrojs/image/components';
+import gearsImage from '@assets/images/gears.jpg';
 ---
 
 <section
 	data-testid="about"
 	id="about"
-	class="mb-10 flex flex-col items-center justify-center lg:mb-0 lg:h-screen lg:flex-row"
->
+	class="mb-10 mt-10 flex flex-col items-center justify-center lg:mb-0 lg:h-screen lg:flex-row"
+>	
+	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
+	<Image class="rounded-full"
+		src={gearsImage}
+		alt="Gears"
+		aspectRatio="4:4"
+		format="png"
+		width={1400}
+		height={1400}
+		loading="eager"
+	/>
+</div>
 	<div class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2">
-		<h2 class="font-monospace text-2xl text-orange lg:text-4xl">About me</h2>
-		<span class="mb-6 ml-2 h-1 w-10 bg-orange"></span>
+		<h2 class="font-calibri text-2xl text-black lg:text-4xl">About me</h2>
+		<!-- <span class="mb-6 ml-2 h-1 w-10 bg-black"></span> -->
 	</div>
 
 	<div class="w-full text-justify text-black dark:text-white lg:w-1/2">
 		<p class="mb-2">
-			Here is your description in English! Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-			irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-			id est laborum
-		</p>
+			At the end of 2018, I found myself standing at a crossroads in my career. For years, I had thrived in the manufacturing industry, excelling as a production manager and equipment operator. While I took pride in my work, I couldn't ignore the growing responsibilities of a growing family and a growing feeling that I wasn't fully challenging myself.<>
+			
+<p class="mb-2">
+	One evening, at my son's STEM night, everything changed. As I watched him and his classmates demonstrate their toys and gadgets, it became crystal clear to me - the power of software development. The ability to create, to solve complex problems, and the sheer potential for personal and professional growth drew me in like a moth before a flame.
+</p>
+<p class="mb-2">
+	What fascinated me most about the tech field was its dynamic nature. It was a realm where reliability and versatility were paramount. Since stepping into this world, I've embraced these values wholeheartedly. I've made it my mission to be a reliable member of every team I join, consistently delivering quality results. Tech's ever-changing landscape demands versatility, and I've eagerly taken on diverse roles and projects, each one contributing to my growth and adaptability.
+</p>
+<p class="mb-2">
+	Today, I'm on a rewarding journey in the tech world, where each day presents exciting challenges and opportunities for growth. 
+</p>
 	</div>
 </section>
