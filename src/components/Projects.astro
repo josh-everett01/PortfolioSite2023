@@ -10,10 +10,10 @@ const projects = await getCollection('projects', ({ data }) => {
 <section
 	data-testid="projects"
 	id="projects"
-	class="mb-10 flex flex-col items-center justify-center md:mb-0 md:h-screen"
+	class="mb-10 mt-10 flex flex-col items-center justify-center md:mb-0 md:h-screen"
 >
-	<h2 class="font-monospace text-2xl text-orange lg:text-4xl">Projects</h2>
-	<span class="mb-10 h-1 w-10 bg-orange"></span>
+	<h2 class="font-calibri text-2xl text-black lg:text-4xl">Projects</h2>
+	<span class="mb-10 h-1 w-10 bg-black"></span>
 	<div class="mb-10 flex w-full flex-col flex-wrap items-center md:flex-row">
 		{
 			projects.map((project) => (
@@ -27,10 +27,10 @@ const projects = await getCollection('projects', ({ data }) => {
 		}
 	</div>
 	<a
-		href="https://github.com/"
+		href="https://github.com/josh-everett01"
 		target="_blank"
 		rel="noopener"
-		class="flex flex-row text-black hover:text-orange dark:text-white dark:hover:text-orange"
+		class="flex flex-row text-black hover:underline dark:text-white dark:hover:text-white"
 		aria-label="link to repository"
 	>
 		View full private projects archive
